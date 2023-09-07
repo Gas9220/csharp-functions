@@ -21,6 +21,14 @@ Console.WriteLine(SumArrayElements(numbers));
 Console.Write("Untouched original array: ");
 PrintArray(numbers);
 
+Console.WriteLine();
+
+// Square and sum all the array values
+Console.Write("Square and sum all the array values: ");
+Console.WriteLine(SumArrayElements(SquareArray(numbers)));
+Console.Write("Untouched original array: ");
+PrintArray(numbers);
+
 // Functions
 
 // Function to print an array
