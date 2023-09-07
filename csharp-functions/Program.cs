@@ -11,7 +11,15 @@ Console.WriteLine();
 Console.Write("Squared array: ");
 PrintArray(SquareArray(numbers));
 Console.Write("Untouched original array: ");
-PrintArray((numbers));
+PrintArray(numbers);
+
+Console.WriteLine();
+
+// Print the sum of all numbers
+Console.Write("Sum of all array values: ");
+Console.WriteLine(SumArrayElements(numbers));
+Console.Write("Untouched original array: ");
+PrintArray(numbers);
 
 // Functions
 
@@ -53,4 +61,19 @@ int[] SquareArray(int[] array)
     }
 
     return newArray;
+}
+
+// Sum all array values
+int SumArrayElements(int[] array)
+{
+    int[] newArray = (int[])array.Clone();
+
+    int sum = 0;
+
+    for (int i = 0; i < newArray.Length; i++)
+    {
+        sum += newArray[i];
+    }
+
+    return sum;
 }
