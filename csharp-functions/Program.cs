@@ -27,3 +27,9 @@ void PrintArray(int[] array)
     Console.WriteLine("]");
 
 }
+
+// Function to square a number
+int Square(int number)
+{
+    return number * number;
+}
